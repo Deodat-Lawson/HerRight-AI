@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* Ensure Quick Exit is always visible and on top */
+button:has([aria-label="Quick Exit"]) {
+  z-index: 9999 !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Emergency ("I'm not safe") transition
+   ============================================
+   Trauma-informed: fast, calm, enveloping. Not
+   glitchy or panicky. The goal is to communicate
+   "help has arrived and you are safe here" in
+   under 500ms, without delaying access to help.
+   ============================================ */
+
+/* The persistent top red gradient — gentle breathing
+   so it feels alive but never alarming. */
+@keyframes emergency-breathe {
+  0%, 100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-emergency-breathe {
+  animation: emergency-breathe 3.5s ease-in-out infinite;
+}
+
+/* Red vignette sweeps in from every edge like a
+   protective shield wrapping around the user, then
+   fades back to reveal the calm interior. */
+@keyframes emergency-vignette-in {
+  0% {
+    opacity: 0;
+    box-shadow: inset 0 0 0 0 rgba(220, 38, 38, 0);
+  }
+  40% {
+    opacity: 1;
+    box-shadow: inset 0 0 120px 40px rgba(220, 38, 38, 0.55);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: inset 0 0 200px 0 rgba(220, 38, 38, 0.08);
+  }
+}
+
+.animate-emergency-vignette-in {
+  animation: emergency-vignette-in 500ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Emergency content rises into place with intent —
+   a slight upward motion like help arriving. */
+@keyframes emergency-content-in {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-emergency-content-in {
+  animation: emergency-content-in 420ms cubic-bezier(0.16, 1, 0.3, 1) 120ms both;
+}
+
+/* Normal (non-emergency) page recedes: fade, blur,
+   and a small scale-down so it feels like stepping
+   out of the public surface into the safe one. */
+@keyframes emergency-dissolve-out {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(6px);
+    transform: scale(0.97);
+  }
+}
+
+.animate-emergency-dissolve-out {
+  animation: emergency-dissolve-out 320ms ease-out forwards;
+}
+
+/* The red "safe mode" status dot glows on arrival. */
+@keyframes emergency-dot-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+  }
+}
+
+.animate-emergency-dot-glow {
+  animation: emergency-dot-glow 1.4s ease-out infinite;
+}
