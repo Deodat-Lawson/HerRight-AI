@@ -767,6 +767,210 @@ export const canadaResources: CanadaResource[] = [
     descriptionEn: "Emergency shelter for women in St. John's.",
     hours: '24/7'
   },
+
+  // === PRINCE EDWARD ISLAND ===
+  {
+    id: 'legal-aid-pei',
+    nameZh: 'PEI省法律援助',
+    nameEn: 'Legal Aid PEI',
+    phone: '1-800-240-9798',
+    city: 'Charlottetown',
+    province: 'Prince Edward Island',
+    provinceCode: 'PE',
+    type: 'legal',
+    languages: ['English', 'French'],
+    descriptionZh: '爱德华王子岛法律援助服务。',
+    descriptionEn: 'Prince Edward Island legal aid services.',
+    hours: 'Mon-Fri 8:30am-4:30pm'
+  },
+  {
+    id: 'pei-crisis',
+    nameZh: 'PEI省危机热线',
+    nameEn: 'PEI Crisis Line',
+    phone: '1-800-218-2885',
+    city: 'Charlottetown',
+    province: 'Prince Edward Island',
+    provinceCode: 'PE',
+    type: 'crisis',
+    languages: ['English', 'French'],
+    descriptionZh: '爱德华王子岛24小时危机支持和自杀预防。',
+    descriptionEn: 'PEI 24-hour crisis support and suicide prevention.',
+    hours: '24/7'
+  },
+  {
+    id: 'anderson-house-shelter',
+    nameZh: 'Anderson House妇女庇护所',
+    nameEn: 'Anderson House',
+    phone: '902-892-0960',
+    city: 'Charlottetown',
+    province: 'Prince Edward Island',
+    provinceCode: 'PE',
+    type: 'shelter',
+    languages: ['English', 'French'],
+    descriptionZh: '为PEI省家庭暴力受害妇女和儿童提供24小时庇护。',
+    descriptionEn: '24-hour shelter for women and children fleeing domestic violence in PEI.',
+    hours: '24/7'
+  },
+  {
+    id: 'pei-family-violence',
+    nameZh: 'PEI省家庭暴力预防服务',
+    nameEn: 'PEI Family Violence Prevention Services',
+    phone: '1-800-240-9894',
+    city: 'Charlottetown',
+    province: 'Prince Edward Island',
+    provinceCode: 'PE',
+    type: 'crisis',
+    languages: ['English', 'French'],
+    descriptionZh: 'PEI省免费家庭暴力支持和转介热线。',
+    descriptionEn: 'PEI toll-free family violence support and referral line.',
+    hours: '24/7'
+  },
+
+  // === YUKON ===
+  {
+    id: 'legal-aid-yukon',
+    nameZh: '育空法律援助',
+    nameEn: 'Legal Aid Yukon',
+    phone: '867-667-5210',
+    city: 'Whitehorse',
+    province: 'Yukon',
+    provinceCode: 'YT',
+    type: 'legal',
+    languages: ['English', 'French'],
+    descriptionZh: '育空地区法律援助服务。',
+    descriptionEn: 'Yukon legal aid services.',
+    hours: 'Mon-Fri 8:30am-4:30pm'
+  },
+  {
+    id: 'yukon-crisis',
+    nameZh: '育空危机热线',
+    nameEn: 'Yukon Crisis Line',
+    phone: '1-844-533-3030',
+    city: 'Whitehorse',
+    province: 'Yukon',
+    provinceCode: 'YT',
+    type: 'crisis',
+    languages: ['English'],
+    descriptionZh: '育空24小时危机支持和自杀预防。',
+    descriptionEn: 'Yukon 24-hour crisis support and suicide prevention.',
+    hours: '24/7'
+  },
+  {
+    id: 'kaushees-place',
+    nameZh: "Kaushee's Place妇女庇护所",
+    nameEn: "Kaushee's Place (Yukon Women's Transition Home)",
+    phone: '867-668-5733',
+    city: 'Whitehorse',
+    province: 'Yukon',
+    provinceCode: 'YT',
+    type: 'shelter',
+    languages: ['English', 'French'],
+    descriptionZh: '育空唯一的妇女庇护所，为家暴受害者提供24小时安全住所。',
+    descriptionEn: "Yukon's only women's shelter; 24-hour safe housing for DV survivors.",
+    hours: '24/7'
+  },
+  {
+    id: 'victimlink-yukon',
+    nameZh: 'VictimLink BC/YT受害者热线',
+    nameEn: 'VictimLink BC / Yukon',
+    phone: '1-800-563-0808',
+    city: 'Whitehorse',
+    province: 'Yukon',
+    provinceCode: 'YT',
+    type: 'crisis',
+    languages: ['English', 'French', '中文', '+多种语言'],
+    descriptionZh: 'BC和育空24小时免费多语言受害者求助热线。',
+    descriptionEn: 'BC and Yukon 24/7 toll-free multilingual victim helpline.',
+    hours: '24/7'
+  },
+
+  // === NORTHWEST TERRITORIES ===
+  {
+    id: 'legal-aid-nwt',
+    nameZh: '西北地区法律援助',
+    nameEn: 'Legal Aid NWT',
+    phone: '867-873-7450',
+    city: 'Yellowknife',
+    province: 'Northwest Territories',
+    provinceCode: 'NT',
+    type: 'legal',
+    languages: ['English', 'French'],
+    descriptionZh: '西北地区法律援助服务。',
+    descriptionEn: 'Northwest Territories legal aid services.',
+    hours: 'Mon-Fri 8:30am-5pm'
+  },
+  {
+    id: 'nwt-crisis',
+    nameZh: '西北地区危机热线',
+    nameEn: 'NWT Help Line',
+    phone: '1-800-661-0844',
+    city: 'Yellowknife',
+    province: 'Northwest Territories',
+    provinceCode: 'NT',
+    type: 'crisis',
+    languages: ['English'],
+    descriptionZh: '西北地区24小时危机支持热线。',
+    descriptionEn: 'NWT 24-hour crisis support line.',
+    hours: '24/7'
+  },
+  {
+    id: 'ywca-yellowknife-shelter',
+    nameZh: 'YWCA黄刀镇庇护所',
+    nameEn: 'YWCA Yellowknife (Alison McAteer House)',
+    phone: '867-873-8257',
+    city: 'Yellowknife',
+    province: 'Northwest Territories',
+    provinceCode: 'NT',
+    type: 'shelter',
+    languages: ['English'],
+    descriptionZh: '为西北地区家暴受害妇女和儿童提供紧急庇护。',
+    descriptionEn: 'Emergency shelter for women and children fleeing DV in NWT.',
+    hours: '24/7'
+  },
+
+  // === NUNAVUT ===
+  {
+    id: 'legal-aid-nunavut',
+    nameZh: '努纳武特法律援助',
+    nameEn: 'Legal Aid Nunavut',
+    phone: '867-979-5377',
+    city: 'Iqaluit',
+    province: 'Nunavut',
+    provinceCode: 'NU',
+    type: 'legal',
+    languages: ['English', 'Inuktitut'],
+    descriptionZh: '努纳武特地区法律援助服务。',
+    descriptionEn: 'Nunavut legal aid services.',
+    hours: 'Mon-Fri 9am-5pm'
+  },
+  {
+    id: 'nunavut-crisis',
+    nameZh: '努纳武特危机热线',
+    nameEn: 'Nunavut Kamatsiaqtut Help Line',
+    phone: '1-800-265-3333',
+    city: 'Iqaluit',
+    province: 'Nunavut',
+    provinceCode: 'NU',
+    type: 'crisis',
+    languages: ['English', 'Inuktitut'],
+    descriptionZh: '努纳武特24小时危机支持热线。',
+    descriptionEn: 'Nunavut 24-hour crisis support line.',
+    hours: '24/7'
+  },
+  {
+    id: 'qimaavik-shelter',
+    nameZh: 'Qimaavik妇女庇护所',
+    nameEn: 'Qimaavik Women\'s Emergency Shelter',
+    phone: '867-979-4566',
+    city: 'Iqaluit',
+    province: 'Nunavut',
+    provinceCode: 'NU',
+    type: 'shelter',
+    languages: ['English', 'Inuktitut'],
+    descriptionZh: '伊魁特市妇女紧急庇护所。',
+    descriptionEn: 'Emergency shelter for women in Iqaluit.',
+    hours: '24/7'
+  },
 ];
 
 // Helper functions
@@ -794,6 +998,9 @@ export function getProvinceFromCity(city: string): string | null {
     moncton: 'NB', 'saint john': 'NB',
     charlottetown: 'PE',
     'st. johns': 'NL',
+    whitehorse: 'YT',
+    yellowknife: 'NT',
+    iqaluit: 'NU',
   };
   return cityMap[city.toLowerCase()] || null;
 }
@@ -826,4 +1033,7 @@ export const majorCities = [
   { city: 'Saint John', province: 'New Brunswick', provinceCode: 'NB' },
   { city: 'Charlottetown', province: 'PEI', provinceCode: 'PE' },
   { city: "St. John's", province: 'Newfoundland', provinceCode: 'NL' },
+  { city: 'Whitehorse', province: 'Yukon', provinceCode: 'YT' },
+  { city: 'Yellowknife', province: 'Northwest Territories', provinceCode: 'NT' },
+  { city: 'Iqaluit', province: 'Nunavut', provinceCode: 'NU' },
 ];

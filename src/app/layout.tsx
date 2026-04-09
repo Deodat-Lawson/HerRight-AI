@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh">
-      <body className="min-h-screen bg-white">
+      <body className="min-h-screen bg-gradient-to-b from-rose-50 via-white to-white text-gray-900 antialiased" suppressHydrationWarning>
         <LanguageProvider>
           <ClientLayout>
             {children}
